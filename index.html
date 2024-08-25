@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Maaz Khan Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="asset/css/style.css">
 </head>
+
 <body class="body">
     <div class="main">
         <div class="navbaar"> <!--Navbaar Start Here-->
@@ -16,17 +18,31 @@
             </div>
             <div class="links">
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Skills</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="">Resume</a></li>
-                    <li><a href="">Contact</a></li>
+                    <a href="">
+                        <li>Home</li>
+                    </a>
+                    <a href="#About">
+                        <li>About</li>
+                    </a>
+                    <a href="#Skills">
+                        <li>Skills</li>
+                    </a>
+                    <a href="">
+                        <li>Projects</li>
+                    </a>
+                    <a href="">
+                        <li>Resume</li>
+                    </a>
+                    <a href="">
+                        <li>Contact</li>
+                    </a>
                 </ul>
             </div>
             <div class="hamburger" onclick="menubar_open()">
                 <i class="fa-solid fa-bars"></i>
             </div>
+
+
             <!-- POPUP MENUBAR-->
             <div class="menubar">
                 <ul>
@@ -44,15 +60,93 @@
         </div>
         <!-- Header Start here -->
         <div class="Header">
+            <div class="photo-r">
+                <div class="my-photo">
+                    <img src="asset/img/My image.png" class="my-img" alt="">
+                </div>
+            </div>
             <div class="content">
-                <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore quas, sequi sit numquam modi perspiciatis eos cum explicabo praesentium magnam, omnis nemo harum ducimus laudantium mollitia at aliquam repellendus architecto eum? Sit beatae accusamus perspiciatis saepe, quaerat corrupti et sed minima deserunt eos eligendi laudantium ipsum quasi, ut blanditiis? Id.</h1>
+                <p class="my-name">MAAZ KHAN</p><br>
+                <p class="Header-about">I am a second-year student of Electronics and Computer Engineering. I have
+                    skills in frontend web development, including designing and developing websites. My expertise is in
+                    HTML, CSS, and JavaScript. I am passionate about creating user-friendly web applications.</p>
             </div>
+        </div>
+        <!-- About start here -->
+        <div class="about">
+            <p class="about-heading" id="About">About
+                <hr class="about-hr1">
+            </p>
+            <p class="about-description p1">
+                <label class="about-description-heading">🌟 **[MAAZ KHAN]**</label><br>
+                Aspiring Electronics and Computer Science Engineer | Eager Learner | Seeking Opportunities for Growth
+            </p>
+            <br>
+            <hr class="about-hr2">
 
-            <div class="my-photo">
-                <img src="asset/img/My image.png" class="my-img" alt="">
+            <p class="about-description">
+                <label class="about-description-heading">🌟 **About Me:**</label> <br>
+                Embarking on my journey in Electronics and Computer Science Engineering, I am a passionate and
+                determined individual eager to dive into the world of technology. With a thirst for knowledge and a
+                drive to succeed, I am committed to learning and growing every step of the
+            </p>
+            <br>
+            <hr class="about-hr2">
+
+            <p class="about-description">
+                <label class="about-description-heading">🌟 **Education:** </label><br>
+                🎓 Bachelor of Engineering (B.E.) in Electronics and Computer Science Engineering [AIKTC-SCHOOL OF
+                ENGINEERING AND TECHNOLOGY], [Panvel, India] Expected Graduation:[2027]
+            </p>
+            <br>
+            <hr class="about-hr2">
+
+            <p class="about-description">
+                <label class="about-description-heading">🌟 **Career Aspirations:**</label> <br>
+                Driven by curiosity and a desire to make a meaningful impact, I aspire to carve out a successful career
+                in the field of Electronics and Computer Science Engineering. I am eager to explore different avenues
+                within the tech industry, from software development to hardware design, and contribute to innovative
+                solutions that address real-world challenges.
+            </p> <br>
+            <hr class="about-hr2">
+
+
+            <p class="about-description">
+                <label class="about-description-heading">🌟 **Let's Connect:**</label> <br>
+                As I embark on this exciting journey, I welcome connections with fellow enthusiasts, mentors, and
+                industry professionals who can offer guidance, support, and valuable insights. Let's connect and explore
+                the endless possibilities that lie ahead in the realm of technology!
+            </p>
+            <hr class="about-hr2">
+
+        </div>
+        <div class="skills">
+            <p class="skills-heading" id="Skills">Skills</p>
+            <hr class="about-hr1">
+
+            <div class="skills-images">
+                <div class="Img-box">
+                    <img src="asset/img/HTML-5.png" alt="" class="skills-logo">
+                </div>
+                <div class="Img-box">
+                    <img src="asset/img/CSS3.png" alt="" class="skills-logo">
+                </div>
+                <div class="Img-box">
+                    <img src="asset/img/Javascript.png" alt="" class="skills-logo">
+                </div>
+                <div class="Img-box"><img src="asset/img/React.png" alt="" class="skills-logo">
+                </div>
+                <div class="Img-box">
+                    <img src="asset/img/Bootstrap.png" alt="" class="skills-logo BTSP">
+                </div>
             </div>
+        </div>
+        <div class="projects">
+            <p class="projects-heading" id="Projects">Projects</p>
+            <hr class="about-hr1">
         </div>
     </div>
     <script src="asset/js/script.js"></script>
 </body>
+
 </html>
