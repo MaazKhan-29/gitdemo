@@ -16,9 +16,18 @@ html {
   }
   
 body{
-    /* background-color: black; */
-    transition: 2s ease-in;
+    background: url(../img/bg-1.jpg);
+    backdrop-filter: blur(5px);
+    /* position: absolute;
+    object-fit: contain; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    /* background-blend-mode: ; */
+    ;    /* transition: 2s ease-in; */
 }
+
 /* body{
     overflow-x: hidden;
 } */
@@ -27,7 +36,6 @@ body{
     width: 100%; */
     position: relative;
     overflow: hidden;
-    
 }
 /* Navbaar Start From Here */
 .logo-1{
@@ -43,10 +51,17 @@ body{
     justify-content: space-between;
     height: 85px;
     width: 100%;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    /* width: 90%; */
+    margin: auto;
     /* background-color: rgb(107, 132, 240); */
-    /* position: sticky;
-    z-index: 3;
-    top: 0; */
+    position: sticky;
+    top: 0;
+    z-index: 6;
     /* overflow-y: hidden; */
 }
 .links{
@@ -93,7 +108,7 @@ body{
     top: 100%;
     left: 0;    
     z-index: -1;
-    transition: 0.1s ease-in;
+    transition: 0.1299s ease-in;
 }
 .links ul li:hover::after{
    transform: translateY(-100%);
@@ -111,6 +126,8 @@ body{
     margin-top: 10px;
     z-index: 6;
     transition:0.1s ease-in;
+    color: rgb(122, 74, 12);
+    text-shadow: 1px 1px 5px rgb(122, 82, 21);    
 }
 
 @media screen and  (max-width: 800px) {
@@ -124,11 +141,13 @@ body{
 }
 
 .menubar{
-    height: 100vh;
-    width: 100vw;
-    background-color: rgba(247, 171, 9, 0.705);
+    height: 80vh;
+    width: 80vw;
+    background-color: rgb(134, 68, 6);
     color: white;
     position:absolute;
+    top: 10vh;
+    left: 10vw;
     /* display:contents;
     justify-content: center;
     align-items: center; */
@@ -172,6 +191,8 @@ body{
     margin-right: 15px;
     z-index: 8;
     transition: 0.1s ease;
+    color: rgb(196, 131, 12) ;
+
 }
 /* Navbaar End Here */
 
@@ -179,15 +200,19 @@ body{
 /* Header Start here */
 .Header{
     display: flex;
-    /* background-color: white; */
-    background-color: black;
+    background-color: rgba(19, 15, 15, 0.425);
+    /* background-color: black; */
     flex-wrap: wrap;
-    width: 100%;
+    width: 90%;
+    margin: auto;
     /* height:100vh; */
     justify-content: center;
     position: relative;
-    top: 70px;
+    top: 70px; 
     gap: 150px;
+    border: 1px solid white;
+    border-radius: 50px;
+    backdrop-filter: blur(8px);
     /* height: 500px; */
     @media screen and (min-width:1000px) {
         height: 90vh;
@@ -197,6 +222,7 @@ body{
 .content{
     width: 50%;
     height: fit-content;
+    padding-bottom: 25px;
     @media screen and (max-width:999px) {
         width: 90%;
     }
@@ -231,6 +257,7 @@ body{
     /* filter: drop-shadow(2px 10px 5px rgb(58, 46, 46)); */
     height: 400px;
     transform: rotate(-45deg);
+
     padding: 10px;
     @media screen and (max-width:400px) {
         height: 300px;
@@ -291,10 +318,10 @@ body{
     
 }
 
-.about-hr1{
+.ab-hr1{
     width: 120px;
     margin: auto;
-    background-color: rgb(196, 131, 12);
+    background-color: rgb(196, 131, 12) !important;
     border: none;
     height: 2px;
     }
@@ -315,7 +342,7 @@ body{
 .about .p1{
     margin-top: 50px;
 }
-.about-hr2{
+.ab-hr2{
     /* display: inline-block; */
     width: 95vw;
     margin: auto;
@@ -370,4 +397,103 @@ body{
 
 .BTSP{
     margin-left: 30px;
+}
+/* Skills Section end here */
+
+/* project section Start here */
+.projects{
+    margin-top: 100px;
+    background-color: black;
+    color: aliceblue;
+}
+.projects-heading{
+    color: rgb(196, 131, 12);
+    font-size: 40px;
+    text-align: center;
+}
+.project-details{
+    margin-top: 50px;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-between;
+    /* width: fit-content; */
+    
+}
+.project-img-con{
+    height: 280px;
+    width: 400px;
+    margin-left:50px;
+    margin-top: 20px;
+    /* background-color: aqua; */
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width:550px) {
+        height: 180px;
+        width: 300px;
+        margin: auto;
+    }
+}
+.project-img{
+    height: 270px;
+    width: 390px;
+    /* margin-left:50px;
+    margin-top: 20px; */
+    /* background-color: aqua; */
+    @media screen and (max-width:550px) {
+        height: 180px;
+        width: 300px;
+        margin: auto;
+    }
+}
+
+.project-content{
+    margin-top: 50px;
+    /* margin-left: 100px;    */
+    margin-right:20px ;
+     width: 45vw;
+     margin-bottom: 20px;
+ /* background-color: blueviolet; */
+
+    @media screen and (max-width:550px) {
+        margin: auto;
+        margin-top: 30px;
+        width: 300px;
+    }
+
+}
+.prj-hd-1{
+    color: rgb(196, 131, 12);
+    font-size: 30px;
+    text-align: center;
+}
+/* Contact Start Here */
+.contact{
+    margin-top: 50px;
+    background-color: black;
+}
+.contact-info{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.contact-icons a{
+    text-decoration: none;
+    color: rgb(196, 131, 12);
+    font-size: 50px;
+    @media screen and (max-width:400px) {
+        font-size: 30px;
+    }
+    
+}
+.contact-icons{
+    width: fit-content;
+    /* height: fit-content; */
+    margin-left: 20px;
+}
+.contact-icons:hover a{
+    color: white;
 }

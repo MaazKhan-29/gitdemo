@@ -8,9 +8,12 @@
     <title>Maaz Khan Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="asset/css/style.css">
+
+
 </head>
 
 <body class="body">
+    
     <div class="main">
         <div class="navbaar"> <!--Navbaar Start Here-->
             <div class="logo">
@@ -27,13 +30,13 @@
                     <a href="#Skills">
                         <li>Skills</li>
                     </a>
-                    <a href="">
+                    <a href="#Projects">
                         <li>Projects</li>
                     </a>
                     <a href="">
                         <li>Resume</li>
                     </a>
-                    <a href="">
+                    <a href="#Contact">
                         <li>Contact</li>
                     </a>
                 </ul>
@@ -46,32 +49,19 @@
             <!-- POPUP MENUBAR-->
             <div class="menubar">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li>About</li>
-                    <li>Skills</li>
-                    <li>Projects</li>
-                    <li>Resume</li>
-                    <li>Contact</li>
+                    <li><a href="index.html" onclick="menubar_close()">Home</a></li>
+                    <li><a href="#About" onclick="menubar_close()">About</a></li>
+                    <li><a href="#Skills" onclick="menubar_close()">Skills</a></li>
+                    <li><a href="#Projects" onclick="menubar_close()">Project</a></li>
+                    <li><a href="#Resume" onclick="menubar_close()">Resume</a></li>
+                    <li><a href="#Contact" onclick="menubar_close()">Contact</a></li>
                 </ul>
                 <!-- <div class="back" onclick="menubar_close()">
                 <i class="fa-solid fa-xmark"></i>
                 </div> -->
             </div>
         </div>
-        <div class="menubar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li>About</li>
-                <li>Skills</li>
-                <li>Projects</li>
-                <li>Resume</li>
-                <li>Contact</li>
-            </ul>
-            <!-- <div class="back" onclick="menubar_close()">
-            <i class="fa-solid fa-xmark"></i>
-            </div> -->
-        </div>
-        <!-- Header Start here -->
+        <!-- Header Start Here -->
         <div class="Header">
             <div class="photo-r">
                 <div class="my-photo">
@@ -85,17 +75,17 @@
                     HTML, CSS, and JavaScript. I am passionate about creating user-friendly web applications.</p>
             </div>
         </div>
-        <!-- About start here -->
+        <!-- About Start Here -->
         <div class="about">
             <p class="about-heading" id="About">About
-                <hr class="about-hr1">
+                <hr class="ab-hr1">
             </p>
             <p class="about-description p1">
                 <label class="about-description-heading">🌟 **[MAAZ KHAN]**</label><br>
                 Aspiring Electronics and Computer Science Engineer | Eager Learner | Seeking Opportunities for Growth
             </p>
             <br>
-            <hr class="about-hr2">
+            <hr class="ab-hr2">
 
             <p class="about-description">
                 <label class="about-description-heading">🌟 **About Me:**</label> <br>
@@ -104,7 +94,7 @@
                 drive to succeed, I am committed to learning and growing every step of the
             </p>
             <br>
-            <hr class="about-hr2">
+            <hr class="ab-hr2">
 
             <p class="about-description">
                 <label class="about-description-heading">🌟 **Education:** </label><br>
@@ -112,7 +102,7 @@
                 ENGINEERING AND TECHNOLOGY], [Panvel, India] Expected Graduation:[2027]
             </p>
             <br>
-            <hr class="about-hr2">
+            <hr class="ab-hr2">
 
             <p class="about-description">
                 <label class="about-description-heading">🌟 **Career Aspirations:**</label> <br>
@@ -121,7 +111,7 @@
                 within the tech industry, from software development to hardware design, and contribute to innovative
                 solutions that address real-world challenges.
             </p> <br>
-            <hr class="about-hr2">
+            <hr class="ab-hr2">
 
 
             <p class="about-description">
@@ -130,12 +120,13 @@
                 industry professionals who can offer guidance, support, and valuable insights. Let's connect and explore
                 the endless possibilities that lie ahead in the realm of technology!
             </p>
-            <hr class="about-hr2">
+            <hr class="ab-hr2">
 
         </div>
+        <!-- Skills Start Here -->
         <div class="skills">
             <p class="skills-heading" id="Skills">Skills</p>
-            <hr class="about-hr1">
+            <hr class="ab-hr1">
 
             <div class="skills-images">
                 <div class="Img-box">
@@ -154,12 +145,49 @@
                 </div>
             </div>
         </div>
+        <!-- Projects Start Here -->
         <div class="projects">
             <p class="projects-heading" id="Projects">Projects</p>
-            <hr class="about-hr1">
+            <hr class="ab-hr1">
+            <div class="project-details">
+                <div class="project-img-con">
+                    <img src="./asset/img/AmazonClone.png" alt="" class="project-img">
+
+                </div>
+                <div class="project-content">
+                    <label class="prj-hd-1">Amazon UI Clone</label><br>
+                    <p>This project involves creating a front-end clone of Amazon's user interface using HTML and CSS.
+                        The aim is to replicate the look and feel of Amazon's website, focusing on its key components
+                        such as the header, navigation bar, product listings, and footer. The project demonstrates
+                        proficiency in HTML for structuring the content and CSS for styling and layout, closely
+                        mimicking the original design. I have also tried to implement a little bit of CSS animation to
+                        enhance the visual experience.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Contact Start Here -->
+        <div class="contact">
+            <p class="prj-hd-1" id="Contact">Contact</p>
+            <hr class="ab-hr1">
+            <div class="contact-info">
+            <div class="contact-icons">
+                <a href="mailto:maazk8448@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <div class="contact-icons">
+                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <div class="contact-icons">
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <div class="contact-icons">
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            </div>
         </div>
     </div>
     <script src="asset/js/script.js"></script>
+
+
 </body>
 
 </html>
