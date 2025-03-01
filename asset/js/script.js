@@ -24,6 +24,61 @@ function menubar_close() {
 
 
 
+// Project section
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("Scroll animation script loaded!");
+
+    const cards = document.querySelectorAll(".project-details");
+
+    const revealOnScroll = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.intersectionRatio > 0.6) { // ✅ 60% viewport trigger
+                entry.target.classList.add("show");
+            } else {
+                entry.target.classList.remove("show"); // ✅ Reverse on Scroll Up
+            }
+        });
+    }, { threshold: 0.6 });
+
+    cards.forEach((card) => {
+        revealOnScroll.observe(card);
+    });
+});
+
+
+
+
+const container = document.querySelector(".projects-container");
+
+let isDown = false;
+let startX;
+let scrollLeft;
+
+container.addEventListener("mousedown", (e) => {
+  isDown = true;
+  container.classList.add("active"); // Optional: cursor style ke liye
+  startX = e.pageX - container.offsetLeft;
+  scrollLeft = container.scrollLeft;
+});
+
+container.addEventListener("mouseleave", () => {
+  isDown = false;
+  container.classList.remove("active");
+});
+
+container.addEventListener("mouseup", () => {
+  isDown = false;
+  container.classList.remove("active");
+});
+
+container.addEventListener("mousemove", (e) => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - container.offsetLeft;
+  const walk = (x - startX) * 2; // Drag speed adjust karne ke liye *2 diya hai
+  container.scrollLeft = scrollLeft - walk;
+});
+
 
 
 
